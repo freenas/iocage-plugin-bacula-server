@@ -1,0 +1,30 @@
+Bacula Copyright, Trademark, and Licenses
+
+There are a number of different licenses that are used in Bacula. If you have a printed copy of a manual, the details of each of the licenses referred to can be found in the online version of the manual at http://www.bacula.org.
+
+ 
+CC-BY-SA
+
+The Creative Commons Attribution-ShareAlike 4.0 International License (CC-BY-SA)CCbySAChapter is used for the Bacula documentation, which is a free and open license. Though there are certain restrictions that come with this license you may in general freely reproduce it and even make changes to it. However, you must retain the copyright information on the manual. Rather than distribute your own version of this manual, we would much prefer if you would send any corrections or changes to the Bacula project.
+
+The most recent version of the manual can always be found online at http://www.bacula.org.
+
+ 
+AGPL
+
+The vast bulk of the source code is released under the Affero GNU General Public License version 3.
+
+Copyright© 2000-2018, Kern Sibbald
+
+Portions may be copyrighted by other people. These files are released under different licenses which are compatible with the Bacula AGPLv3 license.
+
+ 
+Trademark
+
+Bacula®  is a registered trademark of Kern Sibbald. You may make fair use of the word Bacula in your websites and documentation providing you are referring to the Bacula community version and not an incompatible fork, which should have a different name. Generally, providing you do not make commercial use of the name Bacula, you may create websites in non-English languages to promote the use of the Bacula community code. However, your website should contain little or no commercial information, though links to commercial sites is permitted. The main concept is that Bacula is an open source (free software) product and any Bacula website should maintain that use of the name Bacula. Bacula Systems SA has been authorized by Kern Sibbald to use the name Bacula in their company name as well as with their Enterprise versions in return for them making major contributions to the Bacula community version.
+
+ 
+Copyright Assignment Agreement
+
+Developers who have contributed significant changes to the Bacula code must sign a Copyright Assignment Agreement (CAA — formerly called a Fiduciary License Agreement or FLA), which guarantees them the right to use the code they have developed, and also ensures that Kern (and thus the Bacula project) has the rights to the code.  By signing the CAA, your contributions are eligible to be integrated into the Bacula source code.  Having the CAA signed is essential for the Bacula project to maintain a clean copyright and guarantees that Bacula and your source code will always remain Free Software (Open Source).  Providing that your contribution is accepted by the Bacula project, your signed CAA also permits Kern to submit your contribution for  use in the Bacula Enterprise Edition. The Copyright Assignment Agreement is found on the Bacula web site at:
+http://www.bacula.org/downloads/CAA-bacula.en.pdf
