@@ -2,9 +2,9 @@
 
 # Enable the service
 sysrc -f /etc/rc.conf postgresql_enable="YES"
-sysrc -f /etc/rc.conf bacula-dir_enable="YES"
-sysrc -f /etc/rc.conf bacula-fd_enable="YES"
-sysrc -f /etc/rc.conf bacula-sd_enable="YES"
+sysrc -f /etc/rc.conf bacula_dir_enable="YES"
+sysrc -f /etc/rc.conf bacula_fd_enable="YES"
+sysrc -f /etc/rc.conf bacula_fd_enable="YES"
 
 # Start the service
 service postgresql initdb
