@@ -4,7 +4,7 @@
 sysrc -f /etc/rc.conf postgresql_enable="YES"
 sysrc -f /etc/rc.conf bacula_dir_enable="YES"
 sysrc -f /etc/rc.conf bacula_fd_enable="YES"
-sysrc -f /etc/rc.conf bacula_fd_enable="YES"
+sysrc -f /etc/rc.conf bacula_sd_enable="YES"
 
 # Start the service
 service postgresql initdb
@@ -51,5 +51,5 @@ echo "Database Name: $DB"
 echo "Database User: $USER"
 echo "Database Password: $PASS"
 
-echo "Documentation can be found at https://blog.bacula.org/documentation/documentation/"
-echo "The config files can be found at /usr/local/etc/bacula/"
+echo "Documentation can be found at https://blog.bacula.org/documentation/documentation/."
+echo "The config files can be found at /usr/local/etc/bacula/."
