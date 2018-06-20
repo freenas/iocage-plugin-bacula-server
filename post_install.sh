@@ -2,7 +2,9 @@
 
 # Enable the service
 sysrc -f /etc/rc.conf postgresql_enable="YES"
-sysrc -f /etc/rc.conf bacula9-server_enable="YES"
+sysrc -f /etc/rc.conf bacula-dir_enable="YES"
+sysrc -f /etc/rc.conf bacula-fd_enable="YES"
+sysrc -f /etc/rc.conf bacula-sd_enable="YES"
 
 # Start the service
 service postgresql initdb
@@ -39,4 +41,15 @@ service postgresql restart
 
 
 # Start the service
-service bacula9-server start 2>/dev/null
+service bacula-dir start 2>/dev/null
+service bacula-fd start 2>/dev/null
+service bacula-sd start 2>/dev/null
+
+
+echo "Please safe your Database Access on a safe place!"
+echo "Database Name: $DB"
+echo "Database User: $USER"
+echo "Database Password: $PASS"
+
+echo "Please follow the Install Documention https://blog.bacula.org/documentation/documentation/"
+echo "The config files can be found at /usr/local/etc/bacula/"
