@@ -51,5 +51,5 @@ echo "Database Name: $DB"
 echo "Database User: $USER"
 echo "Database Password: $PASS"
 
-echo "Please follow the Install Documention https://blog.bacula.org/documentation/documentation/"
+echo "Documentation can be found at https://blog.bacula.org/documentation/documentation/"
 echo "The config files can be found at /usr/local/etc/bacula/"
