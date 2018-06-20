@@ -46,7 +46,7 @@ service bacula-fd start 2>/dev/null
 service bacula-sd start 2>/dev/null
 
 
-echo "Please safe your Database Access on a safe place!"
+echo "Please save your Database Access on a safe place!"
 echo "Database Name: $DB"
 echo "Database User: $USER"
 echo "Database Password: $PASS"
