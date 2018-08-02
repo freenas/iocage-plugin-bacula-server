@@ -11,7 +11,7 @@ service postgresql initdb
 service postgresql start
 
 USER="bacula"
-DB="bacula_production"
+DB="bacula"
 
 # Save the config values
 echo "$DB" > /root/dbname
@@ -39,12 +39,20 @@ echo "host  all  all 0.0.0.0/0 md5" >> /usr/local/pgsql/data/pg_hba.conf
 # Restart postgresql after config change
 service postgresql restart
 
+#Prepare the Database
+cd /usr/local/share/bacula
+for i in make_bacula_tables grant_bacula_privileges
+do
+./$i -U $USER -w -d $DB
+done
 
 # Start the service
 service bacula-dir start 2>/dev/null
 service bacula-fd start 2>/dev/null
 service bacula-sd start 2>/dev/null
 
+touch /var/log/bacula.log
+chown bacula:bacula /var/log/bacula.log
 
 echo "Please save your Database Access in a safe place!"
 echo "Database Name: $DB"
