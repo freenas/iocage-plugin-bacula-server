@@ -11,7 +11,7 @@ service postgresql initdb
 service postgresql start
 
 USER="bacula"
-DB="bacula_production"
+DB="bacula"
 
 # Save the config values
 echo "$DB" > /root/dbname
@@ -45,6 +45,8 @@ service bacula-dir start 2>/dev/null
 service bacula-fd start 2>/dev/null
 service bacula-sd start 2>/dev/null
 
+touch /var/log/bacula.log
+chown -R bacula:bacula /var/log/bacula.log
 
 echo "Please save your Database Access in a safe place!"
 echo "Database Name: $DB"
