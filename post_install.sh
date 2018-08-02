@@ -43,7 +43,7 @@ service postgresql restart
 cd /usr/local/share/bacula
 for i in make_bacula_tables grant_bacula_privileges
 do
-./i$ -U $USER -w -d $DB
+./$i -U $USER -w -d $DB
 done
 
 # Start the service
