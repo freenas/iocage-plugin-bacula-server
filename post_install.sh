@@ -54,10 +54,10 @@ service bacula-sd start 2>/dev/null
 touch /var/log/bacula.log
 chown bacula:bacula /var/log/bacula.log
 
-echo "Please save your Database Access in a safe place!"
-echo "Database Name: $DB"
-echo "Database User: $USER"
-echo "Database Password: $PASS"
+echo "Please save your Database Access in a safe place!" > /root/PLUGIN_INFO
+echo "Database Name: $DB" > /root/PLUGIN_INFO
+echo "Database User: $USER" > /root/PLUGIN_INFO
+echo "Database Password: $PASS" > /root/PLUGIN_INFO
 
-echo "Documentation can be found at https://blog.bacula.org/documentation/documentation/."
-echo "The config files can be found at /usr/local/etc/bacula/."
+echo "Documentation can be found at https://blog.bacula.org/documentation/documentation/." > /root/PLUGIN_INFO
+echo "The config files can be found at /usr/local/etc/bacula/." > /root/PLUGIN_INFO
